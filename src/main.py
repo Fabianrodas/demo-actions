@@ -2,7 +2,7 @@
 import os
 
 # obtener entrada
-valor = os.environ.get("INPUT_VAL")
+valor = os.environ.get("INPUT_VAL");
 
 if "GITHUB_OUTPUT" in os.environ : 
     with open(os.environ["GITHUB_OUTPUT"], "a") as f :
