@@ -1,5 +1,5 @@
 name: Github Action Demo
-description: A Github Action for Python Language
+description: A Github Action for Python language
 inputs:
   valor:
     description: Ingrese un valor
@@ -8,7 +8,7 @@ outputs:
   result:
     description: Mostrar un saludo con el nombre ingresado
     value: ${{steps.get-result.outputs.result}}
-result:
+runs:
   using: composite
   steps:
     - name: Install Python
